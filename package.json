@@ -1,0 +1,12 @@
+{
+  "name": "js-data-structure",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
