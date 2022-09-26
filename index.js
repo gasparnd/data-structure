@@ -1,4 +1,5 @@
 const MyArray = require("./src/Arrays");
+const HashTable = require("./src/HashTable");
 
 // ARRAY -> MyArray
 
@@ -20,3 +21,15 @@ console.log(myArray.length);
 myArray.pop();
 
 myArray.delete(2);
+
+// HASH TABLE -> HashTable
+
+const myHashTable = new HashTable(50);
+
+myHashTable.set("Name", "Gaspar");
+myHashTable.set("Gaspar", 2000);
+myHashTable.set("Gaston", 2010);
+
+myHashTable.getAllKeys();
+myHashTable.delete("Gaston");
+myHashTable.get("Gaston");
