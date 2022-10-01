@@ -1,5 +1,6 @@
 const MyArray = require("./src/Arrays");
 const HashTable = require("./src/HashTable");
+const MySingleLinkedList = require("./src/LinkedLists");
 
 // ARRAY -> MyArray
 
@@ -33,3 +34,17 @@ myHashTable.set("Gaston", 2010);
 myHashTable.getAllKeys();
 myHashTable.delete("Gaston");
 myHashTable.get("Gaston");
+
+// LINKED LIST -> MySingleLinkedList
+
+const myLinkedList = new MySingleLinkedList(1);
+
+myLinkedList.append("Gaspar");
+console.log("\n");
+myLinkedList.prepend("Hellooo");
+console.log("\n");
+myLinkedList.append("nicolas");
+console.log("\n");
+myLinkedList.insert(2, "cacho");
+console.log("\n");
+myLinkedList.remove(2);
