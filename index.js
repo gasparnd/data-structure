@@ -3,6 +3,7 @@ const HashTable = require("./src/HashTable");
 const MySingleLinkedList = require("./src/LinkedLists");
 const MyDoublyLinkedList = require("./src/MyDoublyLinkedLists");
 const Stack = require("./src/Stacks");
+const Queue = require("./src/Queues");
 
 // ARRAY -> MyArray
 
@@ -68,3 +69,13 @@ myStack.push("Nicolas");
 myStack.push("Yess");
 myStack.peek();
 myStack.pop();
+
+// QUEUE -> Queue
+
+const myQueue = new Queue();
+
+myQueue.enqueue("Gaspar");
+myQueue.enqueue("Nicolas");
+myQueue.enqueue("Yess");
+myQueue.dequeue();
+myQueue.peek();
