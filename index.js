@@ -4,6 +4,7 @@ const MySingleLinkedList = require("./src/LinkedLists");
 const MyDoublyLinkedList = require("./src/MyDoublyLinkedLists");
 const Stack = require("./src/Stacks");
 const Queue = require("./src/Queues");
+const BinarySearchTree = require("./src/BinarySearchTree");
 
 // ARRAY -> MyArray
 
@@ -79,3 +80,18 @@ myQueue.enqueue("Nicolas");
 myQueue.enqueue("Yess");
 myQueue.dequeue();
 myQueue.peek();
+
+// BINARY SEARCH TREE -> BinarySearchTree
+
+const tree = new BinarySearchTree();
+
+tree.insert(10);
+
+tree.insert(4);
+tree.insert(20);
+tree.insert(2);
+tree.insert(17);
+tree.insert(8);
+tree.insert(170);
+
+tree.search(17);
